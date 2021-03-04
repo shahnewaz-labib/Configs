@@ -117,3 +117,4 @@ if ! shopt -oq posix; then
 fi
 
 alias ramclean="sudo ./clearcache.sh"
+alias upg="./upg.sh"

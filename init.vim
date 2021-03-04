@@ -18,6 +18,7 @@ call plug#begin('~/.vim/plugged')
     " Themes
     Plug 'gosukiwi/vim-atom-dark'
     Plug 'kyoz/purify'
+    Plug 'morhetz/gruvbox'
 
     " Auto completion
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -51,9 +52,16 @@ nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 nnoremap <C-j> :tabprevious<CR>                                                                            
 nnoremap <C-k> :tabnext<CR>
-nnoremap <C-s> :w <CR>
-nnoremap <C-l> :s/^/# / <CR>
 
+" Save file
+noremap <C-s> :w <CR>
+inoremap <C-s> <ESC>:w<CR>
+
+
+
+" Proper home
+noremap <Home> 0w
+inoremap <Home> <ESC>0wi
 
 " Change cursor to underline
 :set guicursor+=n-i:hor20-Cursor/lCursor
