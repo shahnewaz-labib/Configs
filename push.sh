@@ -1,10 +1,6 @@
 #!/bin/bash
 
-# Copy init.vim to this directory
-cp /home/labib/.config/nvim/init.vim /home/labib/Configs/init.vim
-
-# Copy .bashrc
-cp /home/labib/.bashrc /home/labib/Configs/.bashrc
+./update.sh
 
 # Git add, commit, push
 git add .

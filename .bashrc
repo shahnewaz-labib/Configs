@@ -115,6 +115,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-alias ramclean="sudo ./clearcache.sh"
-alias upg="./upg.sh"
