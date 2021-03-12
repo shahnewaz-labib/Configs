@@ -52,10 +52,10 @@ installed-apps=['apt:apache2', 'apt:appimagelauncher', 'apt:brave-browser', 'apt
 ignored-reports=['install-language-packs']
 
 [com/linuxmint/updates]
-refresh-last-run=1614785546
+refresh-last-run=1615546901
 show-welcome-page=false
 window-height=570
-window-pane-position=280
+window-pane-position=344
 window-width=790
 
 [io/github/celluloid-player/celluloid]
@@ -92,7 +92,7 @@ desktop-effects-tile-transition='easeInQuad'
 desktop-effects-unmaximize-effect='none'
 desktop-effects-unmaximize-time=100
 desktop-effects-unmaximize-transition='easeNone'
-enabled-applets=['panel1:left:0:menu@cinnamon.org:13', 'panel1:left:2:grouped-window-list@cinnamon.org:15', 'panel1:right:0:systray@cinnamon.org:16', 'panel1:right:1:xapp-status@cinnamon.org:17', 'panel1:right:3:printers@cinnamon.org:19', 'panel1:right:4:removable-drives@cinnamon.org:20', 'panel1:right:5:keyboard@cinnamon.org:21', 'panel1:right:6:network@cinnamon.org:22', 'panel1:right:7:sound@cinnamon.org:23', 'panel1:right:8:power@cinnamon.org:24', 'panel1:right:9:calendar@cinnamon.org:25']
+enabled-applets=['panel1:left:0:menu@cinnamon.org:13', 'panel1:right:0:systray@cinnamon.org:16', 'panel1:right:1:xapp-status@cinnamon.org:17', 'panel1:right:3:printers@cinnamon.org:19', 'panel1:right:4:removable-drives@cinnamon.org:20', 'panel1:right:5:keyboard@cinnamon.org:21', 'panel1:right:6:network@cinnamon.org:22', 'panel1:right:7:sound@cinnamon.org:23', 'panel1:right:8:power@cinnamon.org:24', 'panel1:right:9:calendar@cinnamon.org:25']
 next-applet-id=26
 panel-edit-mode=false
 panel-zone-icon-sizes='[{"panelId": 1, "left": 0, "center": 0, "right": 24}]'
@@ -114,9 +114,9 @@ image-source='directory:///home/labib/Pictures'
 clock-show-date=true
 clock-use-24h=false
 cursor-blink-time=1200
-cursor-theme='DMZ-Black'
+cursor-theme='Breeze'
 gtk-theme='Adwaita-dark'
-icon-theme='Mint-X-Teal'
+icon-theme='ePapirus'
 scaling-factor=uint32 0
 text-scaling-factor=1.0
 
@@ -148,7 +148,7 @@ event-sounds=false
 
 [org/cinnamon/desktop/wm/preferences]
 num-workspaces=4
-theme='McOS-CTLina-Mint-Dark'
+theme='Mojave-dark'
 workspace-names=@as []
 
 [org/cinnamon/muffin]
@@ -181,8 +181,8 @@ login-enabled=false
 switch-enabled=false
 
 [org/cinnamon/theme]
-name='Linux Mint'
-theme-cache-updated=1607412245
+name='Adapta-Nokto'
+theme-cache-updated=1615547496
 
 [org/gnome/calculator]
 accuracy=9
@@ -250,6 +250,24 @@ sidebar-width=200
 window-height=480
 window-width=600
 
+[org/gnome/gedit/plugins]
+active-plugins=['modelines', 'time', 'spell', 'docinfo', 'filebrowser']
+
+[org/gnome/gedit/plugins/filebrowser]
+root='file:///'
+tree-view=true
+virtual-root='file:///home/labib'
+
+[org/gnome/gedit/preferences/ui]
+show-tabs-mode='auto'
+
+[org/gnome/gedit/state/window]
+bottom-panel-size=140
+side-panel-active-page='GeditWindowDocumentsPanel'
+side-panel-size=200
+size=(900, 700)
+state=87168
+
 [org/gnome/gnome-screenshot]
 border-effect='none'
 include-border=true
@@ -273,6 +291,10 @@ sort-order=1
 
 [org/gnome/nm-applet]
 disable-connected-notifications=true
+
+[org/gnome/nm-applet/eap/2b35d48a-e485-4290-9bf3-0c2105d3f4b5]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
 
 [org/gnome/nm-applet/eap/3e4a5f36-9e94-43e3-9ae4-fa3c7e865734]
 ignore-ca-cert=false
@@ -307,6 +329,7 @@ info-stats-type='discharge-accuracy'
 
 [org/gnome/terminal/legacy]
 default-show-menubar=false
+theme-variant='dark'
 
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
 background-transparency-percent=21
@@ -331,7 +354,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(411, 60)
+window-position=(412, 64)
 window-size=(1096, 954)
 
 [org/nemo/desktop]
@@ -340,7 +363,7 @@ home-icon-visible=false
 volumes-visible=false
 
 [org/nemo/preferences]
-show-hidden-files=false
+show-hidden-files=true
 show-location-entry=true
 
 [org/nemo/window-state]
@@ -350,12 +373,12 @@ sidebar-bookmark-breakpoint=5
 start-with-sidebar=true
 
 [org/x/editor/plugins]
-active-plugins=['textsize', 'time', 'open-uri-context-menu', 'docinfo', 'sort', 'joinlines', 'modelines', 'spell', 'filebrowser']
+active-plugins=['modelines', 'textsize', 'time', 'spell', 'docinfo', 'open-uri-context-menu', 'filebrowser', 'joinlines', 'sort']
 
 [org/x/editor/plugins/filebrowser/on-load]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/labib/Codes/MRK/people/190041125_C4203_Coding_Assignment'
+virtual-root='file:///home/labib'
 
 [org/x/editor/preferences/ui]
 statusbar-visible=true

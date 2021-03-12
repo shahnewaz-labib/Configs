@@ -1,6 +1,6 @@
 #!/bin/bash
 
-./update.sh
+./backup.sh
 
 # Git add, commit, push
 git add .
