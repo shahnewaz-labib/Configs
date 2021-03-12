@@ -60,8 +60,11 @@ inoremap <C-s> <ESC>:w<CR>
 
 
 " Proper home
-noremap <Home> 0w
-inoremap <Home> <ESC>0wi
+noremap <Home> ^
+inoremap <Home> <ESC>^i
+
+
+
 
 " Change cursor to underline
 :set guicursor+=n-i:hor20-Cursor/lCursor

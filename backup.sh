@@ -1,11 +1,19 @@
 #!/bin/bash
 
-cp /home/labib/.config/nvim/init.vim /home/labib/Configs/init.vim
+sudo cp /home/labib/.config/nvim/init.vim /home/labib/Configs/init.vim
+echo "copied init.vim"
 
-cp /home/labib/.bashrc /home/labib/Configs/.bashrc
+sudo cp /home/labib/.bashrc /home/labib/Configs/.bashrc
+echo "copied .bashrc"
 
-cp -r /home/labib/.icons/* /home/labib/Configs/.icons/
+sudo cp -r /home/labib/.icons/* /home/labib/Configs/.icons/
+echo "copied .icons"
 
-cp -r /home/labib/.themes/* /home/labib/Configs/.themes/
+sudo cp -r /home/labib/.themes/* /home/labib/Configs/.themes/
+echo "copied .themes"
+
+sudo cp -r /home/labib/codes/* /home/labib/Configs/codes/
+echo "copied codes folder"
 
 dconf dump / > settings
+echo "saved settings in settings file"
