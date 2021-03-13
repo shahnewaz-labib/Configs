@@ -13,15 +13,47 @@
 int fx[]={+0,+0,+1,-1,-1,+1,-1,+1};
 int fy[]={-1,+1,+0,+0,+1,+1,-1,-1};
 using namespace std;
+const int N = 1e5+10;
+vector<int> adj[N];
+bool vis[N];
+int timer = 0;
+int discover[N], low[N];
+bool bridge;
+
+void dfs(int node, int parent) {
+    vis[node] = 1;
+    discover[node] = low[node] = timer++;
+    for(int child : adj[node]) {
+        if(child == parent) continue;
+        if(vis[node]) {
+            low[node] = min(low[node], discover[child]);
+        } else {
+            dfs(child, node);
+            low[node] = min(low[child], low[node]);
+            if(low[child] > discover[node]) {
+                bridge = true;
+                return;
+            }
+        }
+    }
+}
 
 int main() {
 #ifndef ONLINE_JUDGE
-    // freopen("input.txt", "r", stdin);
+    freopen("input.txt", "r", stdin);
     // freopen("output.txt", "w", stdout);
 #endif
-     
+    int nodes, edges, a, b; cin >> nodes >> edges;
+    for(int i = 0; i < edges; i++) {
+        cin >> a >> b;
+        adj[a].push_back(b);
+        adj[b].push_back(a);
+    }
 
+    dfs(1, -1);
 
+    if(bridge) cout << 0 << nl;
+    else cout << "There could be an ans\n";
 
 
 	return 0;
