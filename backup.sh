@@ -12,8 +12,6 @@ echo "copied .icons"
 sudo cp -r /home/labib/.themes/* /home/labib/Configs/.themes/
 echo "copied .themes"
 
-sudo cp -r /home/labib/codes/* /home/labib/Configs/codes/
-echo "copied codes folder"
 
 dconf dump / > settings
 echo "saved settings in settings file"
