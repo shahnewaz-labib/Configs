@@ -10,6 +10,8 @@
 #define nl          "\n"
 #define de(x)       cout << #x << " = " << x << "\n";
 #define HERE        cout << "HERE\n";
+#define precision(a) fixed << setprecision(a)
+#define endl '\n'
 int fx[]={+0,+0,+1,-1,-1,+1,-1,+1};
 int fy[]={-1,+1,+0,+0,+1,+1,-1,-1};
 using namespace std;

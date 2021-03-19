@@ -45,6 +45,7 @@ syntax on
 autocmd filetype cpp map <F5> :!g++ % <CR> 
 autocmd filetype cpp map <F6> :!g++ % && (./a.out < input.txt) > output.txt <CR>
 autocmd filetype python map <F5> :!python3 % <CR>
+autocmd filetype sh map <F5> :!./% <CR>
 
 
 " Switching Tabs
@@ -69,4 +70,4 @@ inoremap <Home> <ESC>^i
 " Change cursor to underline
 :set guicursor+=n-i:hor20-Cursor/lCursor
 
-colorscheme atom-dark
+colorscheme gruvbox
