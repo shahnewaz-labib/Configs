@@ -52,7 +52,7 @@ installed-apps=['apt:git', 'apt:google-chrome-stable', 'apt:neovim', 'apt:nodejs
 ignored-reports=['install-language-packs']
 
 [com/linuxmint/updates]
-refresh-last-run=1616178692
+refresh-last-run=1616226598
 show-welcome-page=false
 window-height=570
 window-pane-position=280
@@ -68,7 +68,7 @@ maximized=false
 playlist-width=220
 show-controls=false
 show-playlist=false
-volume=0.80000000000000004
+volume=0.97999999999999998
 width=1280
 
 [org/cinnamon]
@@ -121,6 +121,19 @@ gtk-theme='Adwaita-dark'
 icon-theme='ePapirus'
 scaling-factor=uint32 0
 text-scaling-factor=1.0
+
+[org/cinnamon/desktop/keybindings]
+custom-list=['custom1', '__dummy__', 'custom0']
+
+[org/cinnamon/desktop/keybindings/custom-keybindings/custom0]
+binding=['<Primary>F1']
+command='audio-hdmi'
+name='audio-hdmi'
+
+[org/cinnamon/desktop/keybindings/custom-keybindings/custom1]
+binding=['<Primary>F2']
+command='audio-laptop'
+name='audio-laptop'
 
 [org/cinnamon/desktop/keybindings/wm]
 move-to-workspace-1=['<Super>1']
@@ -373,7 +386,7 @@ show-hidden-files=true
 show-location-entry=true
 
 [org/nemo/window-state]
-geometry='800x550+550+243'
+geometry='800x550+740+210'
 maximized=true
 sidebar-bookmark-breakpoint=5
 start-with-sidebar=true
@@ -415,7 +428,7 @@ catalogs-2-10=true
 active-extensions=['23hq', 'bookmarks', 'burn_disc', 'catalogs', 'change_date', 'comments', 'contact_sheet', 'convert_format', 'desktop_background', 'edit_metadata', 'exiv2_tools', 'facebook', 'file_manager', 'file_tools', 'find_duplicates', 'flicker', 'gstreamer_tools', 'gstreamer_utils', 'image_print', 'image_rotation', 'image_viewer', 'importer', 'jpeg_utils', 'list_tools', 'oauth', 'photo_importer', 'photobucket', 'picasaweb', 'raw_files', 'red_eye_removal', 'rename_series', 'resize_images', 'search', 'selections', 'slideshow', 'webalbums']
 
 [org/x/reader/default]
-window-ratio=(5.4395557696121477, 1.8622884181252066)
+window-ratio=(1.9979166666666666, 1.2962962962962963)
 
 [org/x/viewer/view]
 background-color='rgb(0,0,0)'

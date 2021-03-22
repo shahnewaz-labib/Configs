@@ -30,7 +30,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'airblade/vim-gitgutter'
 
     " Vim snippets
-    Plug 'SirVer/ultisnips'    
+    Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets' 
 
     " Syntax checking
     Plug 'scrooloose/syntastic'
