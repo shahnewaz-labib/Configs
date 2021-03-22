@@ -34,7 +34,14 @@ call plug#begin('~/.vim/plugged')
 
     " Syntax checking
     Plug 'scrooloose/syntastic'
- 
+
+    " Goyo - Distraction free writing
+    Plug 'junegunn/goyo.vim'    
+
+    " Limelight
+    Plug 'junegunn/limelight.vim'
+
+
 
 call plug#end()
 
@@ -71,3 +78,16 @@ inoremap <Home> <ESC>^i
 :set guicursor+=n-i:hor20-Cursor/lCursor
 
 colorscheme gruvbox
+
+" Statusline
+set statusline=
+set statusline+=%#IncSearch#
+set statusline+=\ %y
+set statusline+=\ %r
+set statusline+=%#CursorLineNr#
+set statusline+=\ %F
+set statusline+=%= "Right side settings
+set statusline+=%#Search#
+set statusline+=\ %l/%L
+set statusline+=\ [%c]
+

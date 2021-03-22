@@ -6,6 +6,9 @@ echo "copied init.vim"
 sudo cp /home/labib/.bashrc /home/labib/Configs/.bashrc
 echo "copied .bashrc"
 
+sudo cp /home/labib/.bash_aliases .bash_aliases
+echo "copied .bash_aliases"
+
 sudo cp -r /home/labib/.icons/* /home/labib/Configs/.icons/
 echo "copied .icons"
 

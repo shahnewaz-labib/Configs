@@ -116,12 +116,4 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# aliases #
-alias update='sudo apt update'
-alias upgrade='sudo apt upgrade -y'
-# Switching audio o/p device
-#alias audio-hdmi='pacmd set-card-profile 0 output:hdmi-stereo+input:analog-stereo'
-#alias audio-laptop='pacmd set-card-profile 0 output:analog-stereo+input:analog-stereo'
-
-
 export PATH=$PATH:$HOME/bin/
