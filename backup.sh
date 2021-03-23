@@ -1,22 +1,28 @@
 #!/bin/bash
 
-sudo cp /home/labib/.config/nvim/init.vim /home/labib/Configs/init.vim
-echo "copied init.vim"
+sudo cp ~/codes/cp/template.cpp template.cpp
+echo "[+] copied cp code template"
 
-sudo cp /home/labib/.bashrc /home/labib/Configs/.bashrc
-echo "copied .bashrc"
+sudo cp ~/.config/nvim/init.vim init.vim
+echo "[+] copied init.vim"
 
-sudo cp /home/labib/.bash_aliases .bash_aliases
-echo "copied .bash_aliases"
+sudo cp ~/.bashrc .bashrc
+echo "[+] copied .bashrc"
 
-sudo cp -r /home/labib/.icons/* /home/labib/Configs/.icons/
-echo "copied .icons"
+sudo cp ~/.bash_aliases .bash_aliases
+echo "[+] copied .bash_aliases"
 
-sudo cp -r /home/labib/.themes/* /home/labib/Configs/.themes/
-echo "copied .themes"
+sudo cp -r ~/.icons/* .icons/
+echo "[+] copied .icons"
 
-sudo cp -r /home/labib/.vim/plugged/vim-snippets/UltiSnips/* Snippets/
-echo "copeied ultisnips snippets"
+sudo cp -r ~/.themes/* .themes/
+echo "[+] copied .themes"
+
+sudo cp -r ~/.vim/plugged/vim-snippets/UltiSnips/* Snippets/
+echo "[+] copeied ultisnips snippets"
+
+sudo cp -r ~/bin/* bin/
+echo "[+] copied bin"
 
 dconf dump / > settings
-echo "saved settings in settings file"
+echo "[+] saved settings in settings file"

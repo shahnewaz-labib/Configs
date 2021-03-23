@@ -1,0 +1,7 @@
+#!/bin/bash
+loc='/home/labib/Wallpapers/'
+x=`ls ${loc} | wc -l`
+((ind=${RANDOM}%${x}+1))
+filename=`ls ${loc} | sed -n "${ind},${ind}p"`
+echo ${filename}
+gsettings set org.cinnamon.desktop.background picture-uri \'file://${loc}${filename}\'
