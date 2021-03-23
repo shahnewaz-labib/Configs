@@ -1,6 +1,6 @@
 snippet main
 int main() {
-	$0
+	$1
 
 
 
@@ -10,3 +10,53 @@ int main() {
 }
 
 endsnippet
+
+snippet fori
+for(int i = $1; i < $2; i++) {
+	$3
+}
+endsnippet
+
+snippet nest
+for(int i = $1; i < $2; i++) {
+	for(int j = $3; j < $4; j++) {
+		$5
+	}
+}
+endsnippet
+
+snippet fork
+for(int k = $1; k < $2; k++) {
+	$3
+}
+endsnippet
+
+snippet case
+printf("Case %d:\n", tc);
+endsnippet
+
+snippet memset
+memset($1,0,sizeof($1));
+endsnippet
+
+snippet preciseprint
+cout << setprecision(10) << fixed << $1 <<"\n";
+endsnippet
+
+snippet vi
+vector<int> $1
+endsnippet
+
+snippet vpii
+vector<pii> $1
+endsnippet
+
+snippet sort
+sort($1.begin(), $1.end());
+endsnippet
+
+
+snippet rsort
+sort($1.rbegin(), $1.rend());
+endsnippet
+
