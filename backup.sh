@@ -21,7 +21,7 @@ echo "[+] copied .icons"
 sudo cp -r ~/.themes/* .themes/
 echo "[+] copied .themes"
 
-sudo cp -r ~/.vim/plugged/vim-snippets/UltiSnips/* Snippets/
+sudo cp -r ~/.config/nvim/plugged/vim-snippets/UltiSnips/* Snippets/
 echo "[+] copeied ultisnips snippets"
 
 sudo cp -r ~/bin/* bin/

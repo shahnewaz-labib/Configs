@@ -14,7 +14,7 @@ syntax enable
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
 " - Avoid using standard Vim directory names like 'plugin'
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/plugged')
     " Themes
     Plug 'gosukiwi/vim-atom-dark'
     Plug 'kyoz/purify'
@@ -40,8 +40,9 @@ call plug#begin('~/.vim/plugged')
 
     " Limelight
     Plug 'junegunn/limelight.vim'
-
-
+    
+    " Maximizer
+    Plug 'szw/vim-maximizer'
 
 call plug#end()
 

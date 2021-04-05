@@ -52,7 +52,7 @@ installed-apps=['apt:git', 'apt:google-chrome-stable', 'apt:neovim', 'apt:nodejs
 ignored-reports=['install-language-packs']
 
 [com/linuxmint/updates]
-refresh-last-run=1617193305
+refresh-last-run=1617559050
 show-welcome-page=false
 window-height=570
 window-pane-position=280
@@ -62,14 +62,17 @@ window-width=790
 settings-migrated=true
 
 [io/github/celluloid-player/celluloid/window-state]
-height=810
+height=600
 loop-playlist=false
 maximized=false
 playlist-width=220
 show-controls=false
 show-playlist=false
-volume=0.95999999999999996
+volume=1.0
 width=1440
+
+[org/blueberry]
+tray-enabled=false
 
 [org/cinnamon]
 app-menu-label=''
@@ -106,7 +109,7 @@ workspace-osd-visible=false
 [org/cinnamon/desktop/background]
 picture-opacity=100
 picture-options='zoom'
-picture-uri='file:///home/labib/Wallpapers/pexels-trace-hudson-2613946.jpg'
+picture-uri='file:///home/labib/Wallpapers/frank-mckenna-OD9EOzfSOh0-unsplash.jpg'
 
 [org/cinnamon/desktop/background/slideshow]
 delay=15
@@ -214,6 +217,12 @@ target-units='radian'
 window-position=(1570, 435)
 word-size=64
 
+[org/gnome/charmap]
+last-char=uint32 193
+
+[org/gnome/charmap/window-state]
+size=(1080, 591)
+
 [org/gnome/cheese]
 burst-delay=1000
 camera='USB2.0 HD IR UVC WebCam: USB2.0'
@@ -266,12 +275,12 @@ window-height=480
 window-width=600
 
 [org/gnome/gedit/plugins]
-active-plugins=['modelines', 'time', 'spell', 'docinfo', 'filebrowser']
+active-plugins=['modelines', 'filebrowser', 'docinfo', 'spell', 'time']
 
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/labib'
+virtual-root='file:///home/labib/Configs/Snippets'
 
 [org/gnome/gedit/preferences/ui]
 show-tabs-mode='auto'
@@ -396,12 +405,12 @@ sidebar-bookmark-breakpoint=5
 start-with-sidebar=true
 
 [org/x/editor/plugins]
-active-plugins=['modelines', 'textsize', 'time', 'spell', 'docinfo', 'open-uri-context-menu', 'filebrowser', 'joinlines', 'sort']
+active-plugins=['textsize', 'sort', 'open-uri-context-menu', 'modelines', 'filebrowser', 'docinfo', 'spell', 'time', 'joinlines']
 
 [org/x/editor/plugins/filebrowser/on-load]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/labib'
+virtual-root='file:///home/labib/.vim/plugged/vim-snippets/UltiSnips'
 
 [org/x/editor/preferences/ui]
 statusbar-visible=true
