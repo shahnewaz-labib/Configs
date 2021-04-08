@@ -50,9 +50,9 @@ syntax on
 
 
 " Key mapping
-autocmd filetype cpp map <F5> :!g++ % <CR> 
-autocmd filetype cpp map <F4> :!g++ % <CR> :!./a.out <CR>
-autocmd filetype cpp map <F6> :!g++ % && (./a.out < input.txt) > output.txt <CR>
+autocmd filetype cpp map <F5> :!g++ % -D LABIB <CR> 
+autocmd filetype cpp map <F4> :!g++ % -D LABIB <CR> :!./a.out <CR>
+autocmd filetype cpp map <F6> :!g++ % -D LABIB -std=c++17 && (./a.out < input.txt) > output.txt <CR>
 autocmd filetype python map <F5> :!python3 % <CR>
 autocmd filetype sh map <F5> :!./% <CR>
 

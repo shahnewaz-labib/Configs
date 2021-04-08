@@ -60,7 +60,11 @@ snippet rsort
 sort($1.rbegin(), $1.rend());
 endsnippet
 
-snippet eb
-emplace_back($1)
+snippet edgestruct
+struct edge {
+	int u,v,w;
+	bool operator<(const edge &p) const {
+		return w < p.w;
+	}
+}
 endsnippet
-
