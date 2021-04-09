@@ -62,14 +62,14 @@ window-width=790
 settings-migrated=true
 
 [io/github/celluloid-player/celluloid/window-state]
-height=600
+height=720
 loop-playlist=false
 maximized=false
 playlist-width=220
 show-controls=false
 show-playlist=false
 volume=1.0
-width=1440
+width=1280
 
 [org/blueberry]
 tray-enabled=false
@@ -403,8 +403,8 @@ show-hidden-files=true
 show-location-entry=true
 
 [org/nemo/window-state]
-geometry='800x550+657+253'
-maximized=false
+geometry='800x550+550+244'
+maximized=true
 sidebar-bookmark-breakpoint=5
 start-with-sidebar=true
 
