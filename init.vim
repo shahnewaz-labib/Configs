@@ -67,7 +67,8 @@ nnoremap <C-k> :tabnext<CR>
 noremap <C-s> :w <CR>
 inoremap <C-s> <ESC>:w<CR>
 
-
+" Maximize current tab
+nnoremap <C-/> :MaximizerToggle<CR>
 
 " Proper home
 noremap <Home> ^

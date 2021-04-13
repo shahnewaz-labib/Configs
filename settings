@@ -69,7 +69,7 @@ playlist-width=220
 show-controls=false
 show-playlist=false
 volume=1.0
-width=1280
+width=1728
 
 [org/blueberry]
 tray-enabled=false
@@ -109,7 +109,7 @@ workspace-osd-visible=false
 [org/cinnamon/desktop/background]
 picture-opacity=100
 picture-options='zoom'
-picture-uri='file:///home/labib/Wallpapers/forrest-cavale-qfmd9bu7IgA-unsplash.jpg'
+picture-uri='file:///home/labib/Wallpapers/austin-rich-lgZOr2kErMM-unsplash.jpg'
 
 [org/cinnamon/desktop/background/slideshow]
 delay=15
@@ -390,7 +390,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(411, 38)
+window-position=(411, 60)
 window-size=(1096, 954)
 
 [org/nemo/desktop]
@@ -414,7 +414,7 @@ active-plugins=['textsize', 'sort', 'open-uri-context-menu', 'modelines', 'fileb
 [org/x/editor/plugins/filebrowser/on-load]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/labib/.cache/.fr-r5GnsX/Osintgram-1.1/doc'
+virtual-root='file:///home/labib/Downloads'
 
 [org/x/editor/preferences/ui]
 statusbar-visible=true
