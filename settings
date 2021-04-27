@@ -58,18 +58,23 @@ window-height=570
 window-pane-position=280
 window-width=790
 
+[desktop/ibus/general]
+engines-order=['xkb:us::eng', 'ibus-avro']
+preload-engines=['xkb:us::eng', 'ibus-avro']
+version='1.5.22'
+
 [io/github/celluloid-player/celluloid]
 settings-migrated=true
 
 [io/github/celluloid-player/celluloid/window-state]
-height=720
+height=810
 loop-playlist=false
 maximized=false
 playlist-width=220
 show-controls=false
 show-playlist=false
 volume=1.0
-width=1728
+width=456
 
 [org/blueberry]
 tray-enabled=false
@@ -106,14 +111,20 @@ panels-enabled=['1:0:top']
 panels-height=['1:28']
 workspace-osd-visible=false
 
+[org/cinnamon/desktop/applications/calculator]
+exec='gnome-calculator'
+
+[org/cinnamon/desktop/applications/terminal]
+exec='gnome-terminal'
+
 [org/cinnamon/desktop/background]
 picture-opacity=100
 picture-options='zoom'
-picture-uri='file:///home/labib/Wallpapers/austin-rich-lgZOr2kErMM-unsplash.jpg'
+picture-uri='file:///home/labib/Wallpapers/pexels-simon-migaj-1402850.jpg'
 
 [org/cinnamon/desktop/background/slideshow]
 delay=15
-image-source='directory:///home/labib/Pictures'
+image-source='xml:///usr/share/cinnamon-background-properties/linuxmint-ulyssa.xml'
 
 [org/cinnamon/desktop/interface]
 clock-show-date=true
@@ -157,6 +168,9 @@ switch-to-workspace-6=['<Alt>6']
 switch-to-workspace-7=['<Alt>7']
 switch-to-workspace-8=['<Alt>8']
 toggle-maximized=['<Super>Up']
+
+[org/cinnamon/desktop/media-handling]
+autorun-never=false
 
 [org/cinnamon/desktop/screensaver]
 lock-enabled=true
@@ -382,7 +396,7 @@ selected-color=(true, 0.80000000000000004, 0.0, 0.0, 1.0)
 [org/gtk/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=false
+show-hidden=true
 show-size-column=true
 show-type-column=true
 sidebar-width=150
@@ -390,7 +404,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(411, 60)
+window-position=(289, 86)
 window-size=(1096, 954)
 
 [org/nemo/desktop]
@@ -399,7 +413,7 @@ home-icon-visible=false
 volumes-visible=false
 
 [org/nemo/preferences]
-show-hidden-files=true
+show-hidden-files=false
 show-location-entry=true
 
 [org/nemo/window-state]
@@ -427,13 +441,14 @@ size=(650, 500)
 state=43908
 
 [org/x/pix/browser]
+browser-sidebar-width=294
 filterbar-visible=true
 maximized=true
 properties-visible=true
 show-thumbnails=true
 sort-inverse=false
 sort-type='file::mtime'
-startup-current-file='file://~/Codes/the-right-angle/images/shei2.png'
+startup-current-file=''
 startup-location='file://~/Codes/the-right-angle/images'
 thumbnail-list-size=126
 viewer-sidebar='hidden'
@@ -445,7 +460,7 @@ catalogs-2-10=true
 active-extensions=['23hq', 'bookmarks', 'burn_disc', 'catalogs', 'change_date', 'comments', 'contact_sheet', 'convert_format', 'desktop_background', 'edit_metadata', 'exiv2_tools', 'facebook', 'file_manager', 'file_tools', 'find_duplicates', 'flicker', 'gstreamer_tools', 'gstreamer_utils', 'image_print', 'image_rotation', 'image_viewer', 'importer', 'jpeg_utils', 'list_tools', 'oauth', 'photo_importer', 'photobucket', 'picasaweb', 'raw_files', 'red_eye_removal', 'rename_series', 'resize_images', 'search', 'selections', 'slideshow', 'webalbums']
 
 [org/x/reader/default]
-window-ratio=(1.9979166666666666, 1.2962962962962963)
+window-ratio=(2.2793045902955282, 1.7258110550851491)
 
 [org/x/viewer/ui]
 statusbar=true
@@ -456,7 +471,7 @@ background-color='rgb(0,0,0)'
 use-background-color=true
 
 [org/x/viewer/window]
-maximized=true
+maximized=false
 
 [org/x/warpinator/preferences]
 receiving-folder='file:///home/labib/Warpinator'

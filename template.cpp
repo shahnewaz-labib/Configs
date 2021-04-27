@@ -4,16 +4,16 @@
 #define pii 		    pair<int, int>
 #define MIN(x,y)	    (x) < (y) ? x : y
 #define MAX(x,y)	    (x) > (y) ? x : y
-#define Unique(a)       sort(all(a)),a.erase(unique(all(a)),a.end
+#define Unique(a)       sort(all(a)),a.erase(unique(all(a)),a.end)
 #define de(x)           cout << #x << " = " << x << "\n";
 #define HERE            cout << "HERE\n";
 #define precision(a)    fixed << setprecision(a)
-#define endl            '\n'
+#define nl 				"\n"
 
-#ifdef lmao 
-#include "dbg.h" 
-#else 
-#define dbg(...) {} 
+#ifdef LOCAL
+#include "dbg.h"
+#else
+#define dbg(...) {}
 #endif
 
 int fx[]={+0,+0,+1,-1,-1,+1,-1,+1};
@@ -21,9 +21,10 @@ int fy[]={-1,+1,+0,+0,+1,+1,-1,-1};
 using namespace std;
 
 const int mxn = 1e5+10;
+const int inf = INT_MAX;
 
 void solve() {
-
+	
 }
 
 int main() {
