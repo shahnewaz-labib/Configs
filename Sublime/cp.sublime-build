@@ -1,0 +1,10 @@
+{
+	"working_dir": 
+		"/home/labib/codes/X",
+	"shell_cmd": 
+		"g++ -D LOCAL \"${file}\" -o \"/home/labib/codes/X/program\" && timeout 5 \"/home/labib/codes/X/program\" < in > out",
+	"file_regex": 
+		"^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+	"selector": 
+		"source.c",
+}

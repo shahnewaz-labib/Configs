@@ -27,5 +27,8 @@ echo "[+] copeied ultisnips snippets"
 sudo cp -r ~/bin/* bin/
 echo "[+] copied bin"
 
+sudo cp -r ~/.config/sublime-text-3/Packages/User/* Sublime/
+echo "[+] copied sublime things"
+
 dconf dump / > settings
 echo "[+] saved settings in settings file"
