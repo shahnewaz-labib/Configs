@@ -50,9 +50,9 @@ syntax on
 
 
 " Key mapping
-autocmd filetype cpp map <F5> :!g++ % -D LOCAL -std=c++17 <CR> 
-autocmd filetype cpp map <F4> :!g++ % -D LOCAL -std=c++17 && ./a.out > output.txt <CR>
-autocmd filetype cpp map <F6> :!g++ % -D LOCAL -std=c++17 && (./a.out < input.txt) > output.txt <CR>
+autocmd filetype cpp map <F5> :!g++ % -D LOCAL -std=c++17 -o /home/labib/codes/X/program <CR> 
+autocmd filetype cpp map <F4> :!g++ % -D LOCAL -std=c++17 &&  /home/labib/codes/X/program > /home/labib/codes/X/out <CR>
+autocmd filetype cpp map <F6> :!g++ % -D LOCAL -std=c++17 && (/home/labib/codes/X/program < /home/labib/codes/X/in) >  /home/labib/codes/X/out<CR>
 autocmd filetype python map <F5> :!python3 % <CR>
 autocmd filetype sh map <F5> :!./% <CR>
 
@@ -67,8 +67,8 @@ nnoremap <C-k> :tabnext<CR>
 noremap <C-s> :w <CR>
 inoremap <C-s> <ESC>:w<CR>
 
-" Maximize current tab
-nnoremap <C-/> :MaximizerToggle<CR>
+" Maximize current tab (does not work but why)
+" nnoremap <C-/> :MaximizerToggle<CR>
 
 " Proper home
 noremap <Home> ^
