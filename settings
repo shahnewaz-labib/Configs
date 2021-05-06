@@ -439,7 +439,7 @@ active-plugins=['textsize', 'sort', 'open-uri-context-menu', 'modelines', 'fileb
 [org/x/editor/plugins/filebrowser/on-load]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/labib/Downloads'
+virtual-root='file:///home/labib/codes/CSE-Labs/2-1/dbms/lab01'
 
 [org/x/editor/preferences/ui]
 statusbar-visible=true

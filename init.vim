@@ -53,13 +53,11 @@ call plug#begin('~/.config/nvim/plugged')
 
 call plug#end()
 
-syntax on
-
 
 " Key mapping
 autocmd filetype cpp map <F3> :!g++ % -D LOCAL -std=c++17 -o /home/labib/codes/X/program && timeout 5 /home/labib/codes/X/program <CR>
 autocmd filetype cpp map <F5> :!g++ % -D LOCAL -std=c++17 -o /home/labib/codes/X/program <CR> 
-autocmd filetype cpp map <F4> :!g++ % -D LOCAL -std=c++17 -o /home/labib/codes/X/program &&  timeout /home/labib/codes/X/program > /home/labib/codes/X/out <CR>
+autocmd filetype cpp map <F4> :!g++ % -D LOCAL -std=c++17 -o /home/labib/codes/X/program &&  timeout 5 /home/labib/codes/X/program > /home/labib/codes/X/out <CR>
 autocmd filetype cpp map <F6> :!g++ % -D LOCAL -std=c++17 -o /home/labib/codes/X/program && (timeout 5 /home/labib/codes/X/program < /home/labib/codes/X/in) >  /home/labib/codes/X/out<CR>
 autocmd filetype python map <F5> :!python3 % <CR>
 autocmd filetype sh map <F5> :!./% <CR>
@@ -81,9 +79,6 @@ inoremap <C-s> <ESC>:w<CR>
 " Proper home
 noremap <Home> ^
 inoremap <Home> <ESC>^i
-
-
-
 
 " Change cursor to underline
 ":set guicursor+=n-i:hor20-Cursor/lCursor
