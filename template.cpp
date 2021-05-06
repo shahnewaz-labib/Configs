@@ -9,6 +9,7 @@
 #define HERE            cout << "HERE\n";
 #define precision(a)    fixed << setprecision(a)
 #define nl 				"\n"
+#define done(x)         {cout<<x<<"\n"; return;}
 
 #ifdef LOCAL
 #include "dbg.h"

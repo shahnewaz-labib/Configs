@@ -8,6 +8,7 @@ set shiftwidth=4
 set expandtab
 set splitbelow splitright
 set nu rnu
+set noshowmode
 
 syntax enable
 
@@ -19,6 +20,12 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'gosukiwi/vim-atom-dark'
     Plug 'kyoz/purify'
     Plug 'morhetz/gruvbox'
+    Plug 'ErichDonGubler/vim-sublime-monokai'
+
+
+    " Airline
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
 
     " Auto completion
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -50,9 +57,10 @@ syntax on
 
 
 " Key mapping
+autocmd filetype cpp map <F3> :!g++ % -D LOCAL -std=c++17 -o /home/labib/codes/X/program && timeout 5 /home/labib/codes/X/program <CR>
 autocmd filetype cpp map <F5> :!g++ % -D LOCAL -std=c++17 -o /home/labib/codes/X/program <CR> 
-autocmd filetype cpp map <F4> :!g++ % -D LOCAL -std=c++17 &&  /home/labib/codes/X/program > /home/labib/codes/X/out <CR>
-autocmd filetype cpp map <F6> :!g++ % -D LOCAL -std=c++17 && (/home/labib/codes/X/program < /home/labib/codes/X/in) >  /home/labib/codes/X/out<CR>
+autocmd filetype cpp map <F4> :!g++ % -D LOCAL -std=c++17 -o /home/labib/codes/X/program &&  timeout /home/labib/codes/X/program > /home/labib/codes/X/out <CR>
+autocmd filetype cpp map <F6> :!g++ % -D LOCAL -std=c++17 -o /home/labib/codes/X/program && (timeout 5 /home/labib/codes/X/program < /home/labib/codes/X/in) >  /home/labib/codes/X/out<CR>
 autocmd filetype python map <F5> :!python3 % <CR>
 autocmd filetype sh map <F5> :!./% <CR>
 
@@ -78,19 +86,19 @@ inoremap <Home> <ESC>^i
 
 
 " Change cursor to underline
-:set guicursor+=n-i:hor20-Cursor/lCursor
+":set guicursor+=n-i:hor20-Cursor/lCursor
 
 colorscheme gruvbox
 
 " Statusline
-set statusline=
-set statusline+=%#IncSearch#
-set statusline+=\ %y
-set statusline+=\ %r
-set statusline+=%#CursorLineNr#
-set statusline+=\ %F
-set statusline+=%= "Right side settings
-set statusline+=%#Search#
-set statusline+=\ %l/%L
-set statusline+=\ [%c]
+"set statusline=
+"set statusline+=%#IncSearch#
+"set statusline+=\ %y
+"set statusline+=\ %r
+"set statusline+=%#CursorLineNr#
+"set statusline+=\ %F
+"set statusline+=%= "Right side settings
+"set statusline+=%#Search#
+"set statusline+=\ %l/%L
+"set statusline+=\ [%c]
 

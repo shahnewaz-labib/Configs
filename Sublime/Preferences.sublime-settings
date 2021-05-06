@@ -1,7 +1,7 @@
 {
 	"color_scheme": "Packages/Predawn/predawn.tmTheme",
 	"enable_hexadecimal_encoding": false,
-	"font_size": 15,
+	"font_size": 17,
 	"ignored_packages":
 	[
 		"Vintage"
