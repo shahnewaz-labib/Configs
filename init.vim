@@ -9,6 +9,9 @@ set expandtab
 set splitbelow splitright
 set nu rnu
 set noshowmode
+set lazyredraw          " redraw screen only when we need to
+set showmatch           " highlight matching parentheses / brackets [{()}]
+set ruler               " show line and column number of the cursor on right side of statusline
 
 syntax enable
 
@@ -21,7 +24,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'kyoz/purify'
     Plug 'morhetz/gruvbox'
     Plug 'ErichDonGubler/vim-sublime-monokai'
-
+    Plug 'arcticicestudio/nord-vim'
 
     " Airline
     Plug 'vim-airline/vim-airline'
@@ -39,6 +42,10 @@ call plug#begin('~/.config/nvim/plugged')
     " Vim snippets
     Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets' 
 
+    " Start
+    Plug 'mhinz/vim-startify'
+
+
     " Syntax checking
     Plug 'scrooloose/syntastic'
 
@@ -52,7 +59,6 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'szw/vim-maximizer'
 
 call plug#end()
-
 
 " Key mapping
 autocmd filetype cpp map <F3> :!g++ % -D LOCAL -std=c++17 -o /home/labib/codes/X/program && timeout 5 /home/labib/codes/X/program <CR>
