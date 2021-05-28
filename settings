@@ -52,7 +52,7 @@ installed-apps=['apt:adb', 'apt:brave-browser', 'apt:cargo', 'apt:cheese', 'apt:
 ignored-reports=['install-language-packs']
 
 [com/linuxmint/updates]
-refresh-last-run=1621507950
+refresh-last-run=1621515169
 show-welcome-page=false
 window-height=570
 window-pane-position=280
@@ -120,7 +120,7 @@ exec='gnome-terminal'
 [org/cinnamon/desktop/background]
 picture-opacity=100
 picture-options='zoom'
-picture-uri='file:///home/labib/Wallpapers/simon-berger-twukN12EN7c-unsplash.jpg'
+picture-uri='file:///home/labib/Wallpapers/chan-hoi-uj-w-v7OFT4-unsplash.jpg'
 
 [org/cinnamon/desktop/background/slideshow]
 delay=15
@@ -131,7 +131,7 @@ clock-show-date=true
 clock-use-24h=false
 cursor-blink-time=1200
 cursor-theme='Breeze'
-gtk-theme='Adwaita-dark'
+gtk-theme='Orchis-dark'
 icon-theme='ePapirus'
 scaling-factor=uint32 0
 text-scaling-factor=1.0
@@ -180,7 +180,7 @@ event-sounds=false
 
 [org/cinnamon/desktop/wm/preferences]
 num-workspaces=4
-theme='Mojave-dark'
+theme='Orchis'
 workspace-names=@as []
 
 [org/cinnamon/muffin]
@@ -191,7 +191,7 @@ workspace-cycle=false
 
 [org/cinnamon/settings-daemon/peripherals/keyboard]
 delay=uint32 500
-numlock-state='on'
+numlock-state='off'
 repeat-interval=uint32 30
 
 [org/cinnamon/settings-daemon/peripherals/touchpad]
@@ -213,7 +213,7 @@ login-enabled=false
 switch-enabled=false
 
 [org/cinnamon/theme]
-name='Mojave-dark'
+name='Orchis-dark'
 theme-cache-updated=1615547496
 
 [org/gnome/baobab/ui]
@@ -403,7 +403,7 @@ selected-color=(true, 0.80000000000000004, 0.0, 0.0, 1.0)
 [org/gtk/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=true
+show-hidden=false
 show-size-column=true
 show-type-column=true
 sidebar-width=150
@@ -411,7 +411,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(411, 60)
+window-position=(410, 35)
 window-size=(1096, 954)
 
 [org/nemo/desktop]
@@ -424,8 +424,8 @@ show-hidden-files=true
 show-location-entry=true
 
 [org/nemo/window-state]
-geometry='800x550+550+244'
-maximized=true
+geometry='800x550+550+242'
+maximized=false
 sidebar-bookmark-breakpoint=5
 start-with-sidebar=true
 
@@ -472,7 +472,7 @@ catalogs-2-10=true
 active-extensions=['23hq', 'bookmarks', 'burn_disc', 'catalogs', 'change_date', 'comments', 'contact_sheet', 'convert_format', 'desktop_background', 'edit_metadata', 'exiv2_tools', 'facebook', 'file_manager', 'file_tools', 'find_duplicates', 'flicker', 'gstreamer_tools', 'gstreamer_utils', 'image_print', 'image_rotation', 'image_viewer', 'importer', 'jpeg_utils', 'list_tools', 'oauth', 'photo_importer', 'photobucket', 'picasaweb', 'raw_files', 'red_eye_removal', 'rename_series', 'resize_images', 'search', 'selections', 'slideshow', 'webalbums']
 
 [org/x/reader/default]
-window-ratio=(2.2779097387173395, 1.5663865546218487)
+window-ratio=(3.3333333333333335, 1.5802469135802468)
 
 [org/x/viewer/ui]
 statusbar=true
