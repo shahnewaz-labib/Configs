@@ -67,14 +67,14 @@ version='1.5.22'
 settings-migrated=true
 
 [io/github/celluloid-player/celluloid/window-state]
-height=720
+height=810
 loop-playlist=false
 maximized=false
 playlist-width=220
 show-controls=false
 show-playlist=false
-volume=0.93999999999999995
-width=1280
+volume=0.97999999999999998
+width=1440
 
 [org/blueberry]
 tray-enabled=false
@@ -120,7 +120,7 @@ exec='gnome-terminal'
 [org/cinnamon/desktop/background]
 picture-opacity=100
 picture-options='zoom'
-picture-uri='file:///home/labib/Wallpapers/chan-hoi-uj-w-v7OFT4-unsplash.jpg'
+picture-uri='file:///home/labib/Downloads/casey-horner-O0R5XZfKUGQ-unsplash.jpg'
 
 [org/cinnamon/desktop/background/slideshow]
 delay=15
@@ -191,7 +191,7 @@ workspace-cycle=false
 
 [org/cinnamon/settings-daemon/peripherals/keyboard]
 delay=uint32 500
-numlock-state='off'
+numlock-state='on'
 repeat-interval=uint32 30
 
 [org/cinnamon/settings-daemon/peripherals/touchpad]
@@ -383,22 +383,33 @@ theme-variant='dark'
 
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
 audible-bell=true
-background-transparency-percent=6
+background-color='rgb(46,52,54)'
+background-transparency-percent=100
+bold-color='rgb(162,51,51)'
+bold-color-same-as-fg=false
+bold-is-bright=true
+cursor-background-color='rgb(50,146,184)'
 cursor-blink-mode='on'
+cursor-colors-set=true
+cursor-foreground-color='rgb(255,255,255)'
 cursor-shape='block'
 custom-command=''
 default-size-columns=84
-font='Ubuntu Mono 17'
+font='Ubuntu Mono Italic 17'
+foreground-color='rgb(92,175,8)'
+highlight-colors-set=true
+highlight-foreground-color='rgb(194,28,28)'
 login-shell=false
-palette=['rgb(46,52,54)', 'rgb(204,0,0)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(114,220,8)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(39,166,15)']
+palette=['rgb(0,0,0)', 'rgb(204,0,0)', 'rgb(78,154,6)', 'rgb(205,205,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(127,127,127)', 'rgb(255,0,0)', 'rgb(0,255,0)', 'rgb(255,255,0)', 'rgb(92,92,255)', 'rgb(255,0,255)', 'rgb(0,255,255)', 'rgb(255,255,255)']
 use-custom-command=false
 use-system-font=false
+use-theme-colors=false
 use-theme-transparency=false
 use-transparent-background=true
 
 [org/gtk/settings/color-chooser]
-custom-colors=[(0.15225225225225222, 0.65000000000000002, 0.060666666666666695, 1.0), (0.44749444444444292, 0.8633333333333334, 0.03165555555555552, 1.0), (1.0, 1.0, 0.0, 0.5)]
-selected-color=(true, 0.80000000000000004, 0.0, 0.0, 1.0)
+custom-colors=[(0.89803921568627454, 0.89803921568627454, 0.89803921568627454, 1.0), (0.023529411764705889, 0.59607843137254923, 0.60392156862745094, 1.0), (0.0, 0.80392156862745101, 0.80392156862745101, 1.0), (0.80392156862745101, 0.0, 0.80392156862745101, 1.0), (0.20392156862745095, 0.39607843137254906, 0.64313725490196083, 1.0), (0.0, 0.0, 0.93333333333333335, 1.0), (0.80392156862745101, 0.80392156862745101, 0.0, 1.0), (0.0, 0.80392156862745101, 0.0, 1.0)]
+selected-color=(true, 0.82745098039215681, 0.84313725490196079, 0.81176470588235294, 1.0)
 
 [org/gtk/settings/file-chooser]
 date-format='regular'
@@ -411,7 +422,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(410, 35)
+window-position=(410, 60)
 window-size=(1096, 954)
 
 [org/nemo/desktop]
@@ -425,7 +436,7 @@ show-location-entry=true
 
 [org/nemo/window-state]
 geometry='800x550+550+242'
-maximized=false
+maximized=true
 sidebar-bookmark-breakpoint=5
 start-with-sidebar=true
 

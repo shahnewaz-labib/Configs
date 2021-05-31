@@ -1,4 +1,6 @@
-
+set cursorline
+hi clear CursorLine
+hi CursorLine gui=underline cterm=underline
 
 set termguicolors
 set cursorline
@@ -27,8 +29,8 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'arcticicestudio/nord-vim'
 
     " Airline
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
+    "Plug 'vim-airline/vim-airline'
+    "Plug 'vim-airline/vim-airline-themes'
 
     " Auto completion
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -103,3 +105,28 @@ colorscheme gruvbox
 "set statusline+=\ %l/%L
 "set statusline+=\ [%c]
 
+" Testing
+" Map Shift-F12 to switch between light and dark
+function! Switch_background()
+    if &background == "light"
+        set background=dark
+    else
+        set background=light
+    endif
+endfunction
+map <S-F12> :call Switch_background()<CR>
+
+
+let t:is_transparent = 0
+function! Toggle_transparent()
+    if t:is_transparent == 0
+        hi Normal guibg=NONE ctermbg=NONE
+        let t:is_transparent = 1
+    else
+        set background=dark
+        let t:is_tranparent = 0
+    endif
+endfunction
+nnoremap <C-t> : call Toggle_transparent()<CR>
+
+call Toggle_transparent()
