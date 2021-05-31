@@ -1,122 +1,186 @@
+priority -50
+
+extends c
+
+# We want to overwrite everything in parent ft.
+priority -49
+###########################################################################
+#			    Global functions 						  #
+###########################################################################
+
+global !p
+
+def write_docstring_args(arglist, snip):
+	args = str(arglist).split(',')
+
+	if len(args) > 1:
+		c = 0
+		for arg in args:
+			if c == 0:
+				snip.rv += arg
+				c = 1
+			else:
+				snip += '*       : %s' % arg.strip()
+	else:
+		snip.rv = args[0]
+
+
+endglobal
+
+###########################################################################
+#                            TextMate Snippets                            #
+###########################################################################
 snippet main
-int main() {
-	$1
-
-
-
-
-
-	return 0;
+int main()
+{
+	${0}
 }
-
 endsnippet
 
-snippet fori
-for(int i = $1; i < $2; i++) {
+snippet forc "general for loop (for)"
+for (${6:auto} ${1:i} = ${2:v.begin()}; `!p import re; snip.rv = re.split("[^\w]",t[1])[-1]` ${4:!=} ${3:`!p m = re.search(r'^(?:(.*)(\.|->)begin\(\)|((?:std|boost)::)?begin\((.*)\))$', t[2]); snip.rv = (((m.group(3) if m.group(3) else "") + "end(" + m.group(4) + ")") if m.group(4) else (m.group(1) + m.group(2) + "end()")) if m else ""`}; ${5:++`!p snip.rv = t[1].split(" ")[-1]`}) {
+	${VISUAL}$0
+}
+endsnippet
+
+snippet beginend "$1.begin(), $1.end() (beginend)"
+${1:v}${1/^.*?(-)?(>)?$/(?2::(?1:>:.))/}begin(), $1${1/^.*?(-)?(>)?$/(?2::(?1:>:.))/}end()
+endsnippet
+
+snippet cl "class .. (class)"
+class ${1:`!p snip.rv = snip.basename or "name"`}
+{
+public:
+	${1/(\w+).*/$1/} (${2:arguments});
+	virtual ~${1/(\w+).*/$1/} ();
+
+private:
+	${0:/* data */}
+};
+endsnippet
+
+snippet ns "namespace .. (namespace)"
+namespace${1/.+/ /m}${1:`!p snip.rv = snip.basename or "name"`}
+{
+	${VISUAL}$0
+}${1/.+/ \/* /m}$1${1/.+/ *\/ /m}
+endsnippet
+
+snippet readfile "read file (readF)"
+std::vector<char> v;
+if (FILE *fp = fopen(${1:"filename"}, "r"))
+{
+	char buf[1024];
+	while(size_t len = fread(buf, 1, sizeof(buf), fp))
+		v.insert(v.end(), buf, buf + len);
+	fclose(fp);
+}
+endsnippet
+
+snippet map "std::map (map)"
+std::map<${1:key}, ${2:value}> map$0;
+endsnippet
+
+snippet vector "std::vector (v)"
+std::vector<${1:char}> v$0;
+endsnippet
+
+snippet tp "template <typename ..> (template)"
+template <typename ${1:_InputIter}>
+endsnippet
+
+snippet cla "An entire .h generator" b
+#ifndef ${2:`!v substitute(vim_snippets#Filename('$1_H','ClassName'),'.*','\U&\E','')`}
+#define $2
+
+class ${1:`!v substitute(substitute(vim_snippets#Filename('$1','ClassName'),'^.','\u&',''), '_\(\w\)', '\u\1', 'g')`}
+{
+private:
 	$3
+
+public:
+	$1();
+	virtual ~$1();
+};
+
+#endif /* $2 */
+endsnippet
+
+
+snippet fnc "Basic c++ doxygen function template" b
+/**
+* @brief: ${4:brief}
+*
+* @param: `!p write_docstring_args(t[3],snip)`
+*
+* @return: `!p snip.rv = t[1]`
+*/
+${1:ReturnType} ${2:FunctionName}(${3:param})
+{
+	${0:FunctionBody}
 }
 endsnippet
 
-snippet nest
-for(int i = $1; i < $2; i++) {
-	for(int j = $3; j < $4; j++) {
-		$5
-	}
+snippet boost_test "Boost test module" b
+#define BOOST_TEST_MODULE ${1:TestModuleName}
+#include <boost/test/included/unit_test.hpp>
+
+BOOST_AUTO_TEST_CASE(${2:TestCaseName})
+{
+	${0:TestDefinition}
 }
+
 endsnippet
 
-snippet fork
-for(int k = $1; k < $2; k++) {
-	$3
+snippet boost_suite "Boost test suite module" b
+#define BOOST_TEST_MODULE ${1:TestModuleName}
+#include <boost/test/included/unit_test.hpp>
+
+BOOST_AUTO_TEST_SUITE(${2:SuiteName})
+
+BOOST_AUTO_TEST_CASE(${3:TestCaseName})
+{
+	${0:TestDefinition}
 }
+
+BOOST_AUTO_TEST_SUITE_END()
+
 endsnippet
+snippet boost_test_fixture "Boost test module with fixture" b
+#define BOOST_TEST_MODULE ${1:TestModuleName}
+#include <boost/test/included/unit_test.hpp>
 
-snippet case
-printf("Case %d:\n", tc);
-endsnippet
+struct ${2:FixtureName} {
+	$2() {}
+	virtual ~$2() {}
+	/* define members here */
+};
 
-snippet memset
-memset($1,0,sizeof($1));
-endsnippet
-
-snippet preciseprint
-cout << setprecision(10) << fixed << $1 <<"\n";
-endsnippet
-
-snippet vi
-vector<int> $1
-endsnippet
-
-snippet vpii
-vector<pii> $1
-endsnippet
-
-snippet sort
-sort($1.begin(), $1.end());
-endsnippet
-
-
-snippet rsort
-sort($1.rbegin(), $1.rend());
-endsnippet
-
-snippet edgestruct
-struct edge {
-	int u,v,w;
-	bool operator<(const edge &p) const {
-		return w < p.w;
-	}
+BOOST_FIXTURE_TEST_CASE(${3:SuiteName}, $2)
+{
+	${0:TestDefinition}
 }
+
 endsnippet
 
-snippet filein
-freopen("input.txt", "r", stdin);
-endsnippet
+snippet boost_suite_fixture "Boost test suite with fixture" b
+#define BOOST_TEST_MODULE ${1:TestModuleName}
+#include <boost/test/included/unit_test.hpp>
 
-snippet fileout
-freopen("output.txt", "w", stdout);
-endsnippet
+struct ${2:FixtureName} {
+	$2() {}
+	virtual ~$2() {}
+	/* define members here */
+};
 
-snippet clockstart
-clock_t tStart = clock();
-endsnippet
+BOOST_FIXTURE_TEST_SUITE(${3:SuiteName}, $2)
 
-snippet clockend
-fprintf(stderr, "\n>> Runtime: %.10fs\n", (double) (clock() - tStart) / CLOCKS_PER_SEC);
-endsnippet
+BOOST_AUTO_TEST_CASE(${4:TestCaseName})
+{
+	${0:TestDefinition}
+}
 
-snippet debugcode
-#ifdef LOCAL
-     #define debug(...) __f(#__VA_ARGS__, __VA_ARGS__)
-    template < typename Arg1 >
-    void __f(const char* name, Arg1&& arg1){
-        cout << name << " = " << arg1 << std::endl;
-    }
-    template < typename Arg1, typename... Args>
-    void __f(const char* names, Arg1&& arg1, Args&&... args){
-        const char* comma = strchr(names+1, ',');
-        cout.write(names, comma - names) << " = " << arg1 <<" | ";
-        __f(comma+1, args...);
-    }
-#else
-    #define debug(...)
-#endif
-endsnippet
+BOOST_AUTO_TEST_SUITE_END()
 
-snippet direction
-int fx[]={+0,+0,+1,-1,-1,+1,-1,+1};
-int fy[]={-1,+1,+0,+0,+1,+1,-1,-1};
 endsnippet
-
-snippet dcon
-#define done(x) {cout<<x<<"\n";continue;} 
-endsnippet
-
-snippet dret
-#define done(x) {cout<<x<<"\n";return 0;} 
-endsnippet
-
-snippet preciseprint
-cout<<setprecision(10)<<fixed<<${1:ans}<<"\n";
-endsnippet
-
+# vim:ft=snippets:

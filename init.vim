@@ -1,6 +1,3 @@
-set cursorline
-hi clear CursorLine
-hi CursorLine gui=underline cterm=underline
 
 set termguicolors
 set cursorline
@@ -130,3 +127,34 @@ endfunction
 nnoremap <C-t> : call Toggle_transparent()<CR>
 
 call Toggle_transparent()
+
+function! CUR()
+    highlight clear CursorLine
+endfunction
+
+call CUR()
+
+function! CLR()
+    highlight clear StatusLine
+endfunction
+
+call CLR()
+
+
+" FAHIM
+
+hi CursorLineNr guibg=none
+hi VertSplit cterm=none gui=none guibg=none
+hi Search guibg=none guifg=#8d93a1 gui=underline
+hi snipLeadingSpaces guifg=bg
+
+set wildmenu
+set path+=**
+set hidden
+set scrolloff=8
+
+set statusline=\ %M\ %r\ %f 
+set statusline+=%=
+set statusline+=\ [%{getcwd()}]\ [%n]\ %p%%
+
+set noequalalways
