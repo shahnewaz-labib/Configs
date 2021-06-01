@@ -90,18 +90,6 @@ inoremap <Home> <ESC>^i
 
 colorscheme gruvbox
 
-" Statusline
-"set statusline=
-"set statusline+=%#IncSearch#
-"set statusline+=\ %y
-"set statusline+=\ %r
-"set statusline+=%#CursorLineNr#
-"set statusline+=\ %F
-"set statusline+=%= "Right side settings
-"set statusline+=%#Search#
-"set statusline+=\ %l/%L
-"set statusline+=\ [%c]
-
 " Testing
 " Map Shift-F12 to switch between light and dark
 function! Switch_background()
@@ -130,6 +118,7 @@ call Toggle_transparent()
 
 function! CUR()
     highlight clear CursorLine
+    hi CursorLine gui=underline
 endfunction
 
 call CUR()
@@ -140,6 +129,11 @@ endfunction
 
 call CLR()
 
+
+function! IN()
+    vs ~/codes/X/in
+    split ~/codes/X/out
+endfunction
 
 " FAHIM
 
