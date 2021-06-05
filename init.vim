@@ -1,4 +1,3 @@
-
 set termguicolors
 set cursorline
 set mouse=a
@@ -14,9 +13,6 @@ set ruler               " show line and column number of the cursor on right sid
 
 syntax enable
 
-" Specify a directory for plugins
-" - For Neovim: stdpath('data') . '/plugged'
-" - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.config/nvim/plugged')
     " Themes
     Plug 'gosukiwi/vim-atom-dark'
@@ -43,7 +39,6 @@ call plug#begin('~/.config/nvim/plugged')
 
     " Start
     Plug 'mhinz/vim-startify'
-
 
     " Syntax checking
     Plug 'scrooloose/syntastic'
@@ -79,28 +74,21 @@ noremap <C-s> :w <CR>
 inoremap <C-s> <ESC>:w<CR>
 
 " Maximize current tab (does not work but why)
-" nnoremap <C-/> :MaximizerToggle<CR>
+nnoremap <C-a> :MaximizerToggle<CR>
 
 " Proper home
 noremap <Home> ^
 inoremap <Home> <ESC>^i
 
-" Change cursor to underline
-":set guicursor+=n-i:hor20-Cursor/lCursor
+" Close all window
+nnoremap <C-w> :wqa! <CR>
+
+" Focus current window
+nnoremap <C-t> :Goyo <CR>
 
 colorscheme gruvbox
 
 " Testing
-" Map Shift-F12 to switch between light and dark
-function! Switch_background()
-    if &background == "light"
-        set background=dark
-    else
-        set background=light
-    endif
-endfunction
-map <S-F12> :call Switch_background()<CR>
-
 
 let t:is_transparent = 0
 function! Toggle_transparent()
@@ -112,7 +100,7 @@ function! Toggle_transparent()
         let t:is_tranparent = 0
     endif
 endfunction
-nnoremap <C-t> : call Toggle_transparent()<CR>
+"nnoremap <C-t> : call Toggle_transparent()<CR>
 
 call Toggle_transparent()
 
@@ -135,6 +123,10 @@ function! IN()
     split ~/codes/X/out
 endfunction
 
+function! SO()
+    source ~/.config/nvim/init.vim
+endfunction
+
 " FAHIM
 
 hi CursorLineNr guibg=none
@@ -152,3 +144,4 @@ set statusline+=%=
 set statusline+=\ [%{getcwd()}]\ [%n]\ %p%%
 
 set noequalalways
+
