@@ -1,0 +1,6 @@
+#!/bin/bash
+
+rm ~/codes/X/*
+echo "removed i o"
+touch ~/codes/X/in ~/codes/X/out
+echo "created i o"

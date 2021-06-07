@@ -192,7 +192,7 @@ workspace-cycle=false
 
 [org/cinnamon/settings-daemon/peripherals/keyboard]
 delay=uint32 500
-numlock-state='on'
+numlock-state='off'
 repeat-interval=uint32 30
 
 [org/cinnamon/settings-daemon/peripherals/touchpad]
@@ -437,7 +437,7 @@ show-location-entry=true
 
 [org/nemo/window-state]
 geometry='800x550+578+269'
-maximized=false
+maximized=true
 sidebar-bookmark-breakpoint=5
 start-with-sidebar=true
 

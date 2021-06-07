@@ -200,3 +200,7 @@ source "$BASH_IT"/bash_it.sh
 export ZAP_PATH=/home/labib/.local/share/zap/bin
 export PATH=$PATH:$ZAP_PATH
 # ========================
+
+
+# z.lua
+eval "$(lua ~/bin/z.lua --init bash)"
