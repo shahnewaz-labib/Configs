@@ -117,14 +117,13 @@ endfunction
 
 call CLR()
 
-
-function! IN()
-    vs ~/codes/X/in
-    split ~/codes/X/out
-endfunction
-
 function! SO()
     source ~/.config/nvim/init.vim
+endfunction
+
+function! IO()
+    vs ~/codes/X/in
+    split ~/codes/X/out
 endfunction
 
 " FAHIM
