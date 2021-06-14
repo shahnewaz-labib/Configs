@@ -4,7 +4,7 @@
 	"font_size": 17,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Vintage",
 	],
-	"theme": "Material-Theme-Darker.sublime-theme"
+	"theme": "Material-Theme-Darker.sublime-theme",
 }
