@@ -67,14 +67,14 @@ version='1.5.22'
 settings-migrated=true
 
 [io/github/celluloid-player/celluloid/window-state]
-height=256
+height=720
 loop-playlist=false
 maximized=false
 playlist-width=220
 show-controls=false
 show-playlist=false
 volume=1.0
-width=608
+width=1280
 
 [org/blueberry]
 tray-enabled=false
@@ -427,7 +427,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(410, 55)
+window-position=(410, 35)
 window-size=(1096, 954)
 
 [org/nemo/desktop]
@@ -488,7 +488,7 @@ catalogs-2-10=true
 active-extensions=['23hq', 'bookmarks', 'burn_disc', 'catalogs', 'change_date', 'comments', 'contact_sheet', 'convert_format', 'desktop_background', 'edit_metadata', 'exiv2_tools', 'facebook', 'file_manager', 'file_tools', 'find_duplicates', 'flicker', 'gstreamer_tools', 'gstreamer_utils', 'image_print', 'image_rotation', 'image_viewer', 'importer', 'jpeg_utils', 'list_tools', 'oauth', 'photo_importer', 'photobucket', 'picasaweb', 'raw_files', 'red_eye_removal', 'rename_series', 'resize_images', 'search', 'selections', 'slideshow', 'webalbums']
 
 [org/x/reader/default]
-window-ratio=(2.1287878787878789, 1.2254901960784315)
+window-ratio=(3.2186750347737854, 1.2234377267405752)
 
 [org/x/viewer/ui]
 statusbar=true
