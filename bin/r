@@ -3,3 +3,4 @@ g++ -std=c++17 $1
 echo "------"
 ./a.out
 echo "------"
+rm a.out

@@ -5,13 +5,10 @@
 	],
 	"installed_packages":
 	[
-		"A File Icon",
 		"Anaconda",
 		"BracketHighlighter",
 		"LSP",
-		"Material Theme",
 		"Origami",
 		"Package Control",
-		"Predawn"
 	],
 }

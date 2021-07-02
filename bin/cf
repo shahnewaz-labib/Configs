@@ -1,0 +1,28 @@
+#!/bin/python3
+
+import webbrowser
+import sys
+import os
+
+print('Options:')
+print('1. _labib')
+print('2. fsshakkhor submissions')
+print('3. friends standing')
+print('4. visit handle')
+
+choice = int(input('Enter choice: '))
+
+if choice == 1:
+    webbrowser.open('https://codeforces.com/profile/_labib')
+elif choice == 2:
+    page = input('Enter page number: ')
+    url = 'https://codeforces.com/submissions/fsshakkhor/page/' + page
+    webbrowser.open(url)
+elif choice == 3:
+    webbrowser.open('https://codeforces.com/problemset/standings?friendsEnabled=on')
+elif choice == 4:
+    handle = input('Enter handle name: ')
+    url = 'https://codeforces.com/profile/' + handle
+    webbrowser.open(url)
+    os.system('exit')
+    sys.exit()

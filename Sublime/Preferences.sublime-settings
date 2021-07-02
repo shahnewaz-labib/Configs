@@ -1,10 +1,10 @@
 {
-	"color_scheme": "Packages/Predawn/predawn.tmTheme",
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 	"enable_hexadecimal_encoding": false,
-	"font_size": 17,
+	"font_size": 15,
 	"ignored_packages":
 	[
 		"Vintage",
 	],
-	"theme": "Material-Theme-Darker.sublime-theme",
+	"theme": "Default.sublime-theme",
 }

@@ -67,14 +67,14 @@ version='1.5.22'
 settings-migrated=true
 
 [io/github/celluloid-player/celluloid/window-state]
-height=720
+height=600
 loop-playlist=false
 maximized=false
 playlist-width=220
 show-controls=false
 show-playlist=false
 volume=1.0
-width=1280
+width=1440
 
 [org/blueberry]
 tray-enabled=false
@@ -110,6 +110,7 @@ panel-zone-text-sizes='[{"panelId": 1, "left": 9.0, "center": 0.0, "right": 8.0}
 panels-autohide=['1:false']
 panels-enabled=['1:0:top']
 panels-height=['1:20']
+workspace-expo-view-as-grid=true
 workspace-osd-visible=false
 
 [org/cinnamon/desktop/applications/calculator]
@@ -185,10 +186,12 @@ theme='Orchis'
 workspace-names=@as []
 
 [org/cinnamon/muffin]
-desktop-effects=false
+desktop-effects=true
+invert-workspace-flip-direction=false
 tile-hud-threshold=25
 tile-maximize=true
 workspace-cycle=false
+workspaces-only-on-primary=false
 
 [org/cinnamon/settings-daemon/peripherals/keyboard]
 delay=uint32 500
@@ -427,7 +430,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(410, 35)
+window-position=(410, 55)
 window-size=(1096, 954)
 
 [org/nemo/desktop]
@@ -436,11 +439,11 @@ home-icon-visible=false
 volumes-visible=false
 
 [org/nemo/preferences]
-show-hidden-files=true
+show-hidden-files=false
 show-location-entry=true
 
 [org/nemo/window-state]
-geometry='800x550+550+242'
+geometry='960x1030+470+20'
 maximized=false
 sidebar-bookmark-breakpoint=5
 start-with-sidebar=true
@@ -488,7 +491,7 @@ catalogs-2-10=true
 active-extensions=['23hq', 'bookmarks', 'burn_disc', 'catalogs', 'change_date', 'comments', 'contact_sheet', 'convert_format', 'desktop_background', 'edit_metadata', 'exiv2_tools', 'facebook', 'file_manager', 'file_tools', 'find_duplicates', 'flicker', 'gstreamer_tools', 'gstreamer_utils', 'image_print', 'image_rotation', 'image_viewer', 'importer', 'jpeg_utils', 'list_tools', 'oauth', 'photo_importer', 'photobucket', 'picasaweb', 'raw_files', 'red_eye_removal', 'rename_series', 'resize_images', 'search', 'selections', 'slideshow', 'webalbums']
 
 [org/x/reader/default]
-window-ratio=(3.2186750347737854, 1.2234377267405752)
+window-ratio=(3.1380401696019993, 1.2234377267405752)
 
 [org/x/viewer/ui]
 statusbar=true
