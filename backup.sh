@@ -12,6 +12,9 @@ echo "[+] copied init.vim"
 sudo cp ~/.bashrc .bashrc
 echo "[+] copied .bashrc"
 
+sudo cp ~/.zshrc .zshrc
+echo "[+] copied .zshrc"
+
 sudo cp ~/.bash_aliases .bash_aliases
 echo "[+] copied .bash_aliases"
 
